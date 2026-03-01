@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebanu Catalin - Cele 7 minuni ale Lumii Antice </title>
+
+    <style>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 4px 8px;
+        }
+
+        main {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: gainsboro;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        table {
+            width: 75%;
+            max-width: 1200px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: ivory;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive pentru telefon */
+        @media (max-width: 768px) {
+
+            table {
+                width: 95%;
+            }
+
+            img {
+                float: none !important;
+                display: block;
+                max-width: 90%;      
+                height: auto;        
+                padding: 0 5px;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+                padding: 5px 0;
+            }
+
+            header nav a {
+                margin: 2px 0;
+                padding: 4px 10px;
+            }
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000000; 
+            padding: 10px 20px; 
+            font-size: 18px; 
+            border: 2px solid #4CAF50; 
+            cursor: pointer;
+            border-radius: 12px; 
+            text-align: center;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s; 
+        }
+
+        .dropbtn:hover {
+            background-color: rgba(255, 255, 255, 1); 
+            transform: scale(1.05); 
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 50%; 
+            transform: translateX(-50%); 
+            border-radius: 8px; 
+            overflow: hidden;
+            top: 155%;
+        }
+
+        .dropdown-content a {
+                color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+    </style>
+</head>
+
+<script>
+    function toggleDropdown(event){
+        event.preventDefault();
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+<body>
+    <header>
+        <h1>Portofoliu la CSW</h1>
+        <nav>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Navigare ▼</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="Cebanu Catalin - CV.html">CV</a>
+                    <a href="Lista - Examenele de BAC.html">Examene BAC</a>
+                    <a href="Lista - Bagajelor pasagerilor rutei 7021.html">Lista Bagaje</a>
+                    <a href="Tabele HTML.html">Tabele</a>
+                    <a href="index.html">7 Minuni</a>
+                    <a href="Hărți de imagini și navigare grafică.html">Harti de imagini</a>
+                    <a href="Harta Moldovei Pe Raioane.html">Harta Moldovei pe Raioane</a>
+                    <a href="Formulare.Proba Practica.html">Formulare</a>
+                    <a href="Multimedia in HTML.html">Multimedia in HTML</a>
+                    <a href="Galerie de Imaginii - Cele 7 minuni ale Lumii Antice.html">Galerie de Imagini - Cele 7 Minuni</a>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+
+        <table border="1">
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <h2><u>Cele 7 minuni ale lumii antice</u></h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Acceseaza Optiunea</h3>
+                    <a name="up"></a>
+                    <a href="#Minunea1">Piramida lui Keops</a><br>
+                    <a href="#Minunea2">Gradinile suspendate ale Semiramidei din Babilon</a><br>
+                    <a href="#Minunea3">Templul Dianei din Efes</a><br>
+                    <a href="#Minunea4">Monumentul lui Mausol din Halicarnas</a><br>
+                    <a href="#Minunea5">Statuia lui Zeus din Olimpia</a><br>
+                    <a href="#Minunea6">Farul din Alexandria</a><br>
+                    <a href="#Minunea7">Colosul din Rodhos</a><br><br>
+                </td>
+            </tr>
+
+            <!-- Introducerea -->
+            <tr align="center">
+			    <td style="text-align: justify; padding:10px">
+                    Numarul 7 a jucat in istorie si in mitologie un rol insemnat - cateva popoare ale Orientului antic ii atribuiau chiar o forta mistica; aceasta credinta a fost preluata, ca multe alte traditii, de vechii greci, in istoria carora vom gasi printre altele expeditia "Celor sapte impotriva Terrei", pe "Cei sapte intelepti", de asemenea "Cele sapte minuni ale lumii antice". Aceasta din urma nu era o creatie exclusiv greaca - Piramida cea mare, de exemplu, a fost proiectata si construita de egipteni (care i-au precedat pe greci in cateva sectoare importante, cum este cel al gandirii matematice), iar gradinile suspendate din Babilon au reprezentat o imbinare exceptionala a arhitecturii si tehnicii irigatiilor practicate in Mesopotamia. 
+ 	                Este limpede, prin urmare, ca nu poate fi vorba de "minuni" in sensul mitic al terminologiei - asadar de realizari fantastice, eventual atribuite unor forte supranaturale; erau lucrari de arhitectura si arta, iesite din comun prin caracterul lor monumental-impunator si realizarea la un inalt nivel artistic, reprezentand geniul demiurgic al lumii antice. Spunem si astazi despre un monument impresionant, demn de admirat, "este a opta minune a lumii". 
+ 	                Primul care a descris in ansamblu monumentele a fost Filon din Bizant (sf. sec. III i.e.n.), dar textul sau nu s-a pastrat decat intr-o traducere latineasca tarzie; Herodot, inainte de Filon, iar dupa Filon, alti autori antici de prestigiu - printre care Diodor, Strabon, Vitruviu, Pausanias - au dscris diferite monumente ca "minuni ale lumii antice", totdeauna in numar de sapte. De-a lungul veacurilor, unele au fost inlocuite - de pilda: zidurile Babilonului, prin Farul din Alexandria. Selectia s-a definitivat foarte tarziu (la inc. sec. XIX) fixandu-se asupra urmatoarelor sapte: Piramida lui Cheops (Kufu) de la Giseh, Gradinile suspendate ale Semiramidei din Babilon, Templul Dianei (Artemisei) din Efes, Mormantul lui Mausol din Halicarmas, Statuia lui Zeus din Olimpia, Farul din Alexandria si Colosul din Rhodos. Dintre aceste 7 monumente celebre ale antichitatii Piramida lui Cheops (Piramida cea mare) intruneste trei insusiri menite sa trezeasca in mod deosebit interesul: este cel mai vechi, este singurul care a supravietuit pana astazi si de la el se leaga o seama de chestiuni controversate care, de-a lungul vremii, si mai ales in ultimii 150 de ani, au dat nastere unor speculatii hazardate si unor dispute stiintifice adesea inversunate.
+                    Nici cu celelalte sase monumente lucrurile nu sunt pe deplin lamurite - mai intai fiindca nu putem delimita totdeauna precis elementele mitice de cele istorice, apoi deoarece nu putem stabili decat cu oarecare probabilitate tehnicile folosite in constructie, in sfarsit, datorita faptului ca in unele cazuri suntem nevoiti a ne rezuma la presupuneri chiar si in ceea ce priveste infatisarea acestor monumente, deoarece sursele literare si iconografice (efigii pe monezi si altele) sunt fie sarace, fie contradictorii. 
+                </td>
+            </tr>
+
+
+            <!-- Piramida lui Keops -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea1"></a>
+                    <h1>PIRAMIDA LUI KEOPS</h1>
+                </td>
+            </tr>
+            <tr align="center">
+                <td style="text-align: justify; padding:10px">
+                    <img src="Piramida lui Keops.jpg"  style="float:left; width:400px; margin:10px;" >
+                        Piramida lui Keops, cunoscută și sub denumirea de Marea Piramidă, este cea mai veche dintre cele șapte minuni ale lumii antice și singura care poate fi admirată și astăzi în forma sa aproape intactă. Situată pe Platoul Giza, lângă Cairo, aceasta reprezintă o capodoperă a ingineriei și a măiestriei arhitecturale a vechilor egipteni. Dimensiunile ei sunt impresionante: la bază măsoară aproximativ 230,4 metri pe fiecare latură, iar înălțimea originală era de 147 metri, deși astăzi a scăzut ușor din cauza eroziunii și a dispariției materialelor de acoperire. Construită fără ajutorul mașinilor moderne, piramida este alcătuită din aproximativ 2,3 milioane de blocuri de calcar și granit, unele cântărind între 2 și 16 tone, fiecare așezat cu o precizie remarcabilă, astfel încât laturile se unesc în unghiuri aproape perfecte și se aliniază cu punctele cardinale ale Pământului.
+                        Rolul principal al piramidei era de mormânt regal, menită să adăpostească corpul faraonului Keops (Khufu) și tezaurul său, protejându-l de profanatori și asigurându-i trecerea în viața de apoi, conform credințelor egiptene. Interiorul este structurat într-o serie de coridoare, camere funerare și galerii, inclusiv Marele Coridor Ascendent, Marele Coridor Descendent și Marea Cameră Funerară, toate realizate cu grijă pentru a susține greutatea imensă a structurii. Granitul folosit în camerele interioare provine de la cariere îndepărtate din Aswan, situate la peste 800 de kilometri, ceea ce demonstrează logistica impresionantă a vechilor egipteni.
+                        Marea Piramidă impresionează prin precizia geometriei și a alinierii astronomice. Fiecare colț este orientat aproape perfect către nord, sud, est și vest, iar laturile sunt atent nivelate și finisate pentru a crea o formă aproape perfect pătrată. Pentru exterior, piramida era inițial acoperită cu blocuri de calcar fin lustruit, care reflectau soarele și îi ofereau un aspect strălucitor, vizibil de la zeci de kilometri distanță. Această fațadă a fost în mare parte îndepărtată de-a lungul secolelor pentru construcții ulterioare sau din cauza cutremurelor, dar fundația și structura de bază au rămas aproape intacte, demonstrând stabilitatea și durabilitatea acestei construcții megalitice.
+                        Herodot, cunoscut ca „părintele istoriei”, menționează că ridicarea piramidei a necesitat aproximativ 20 de ani și implicarea a circa 100.000 de muncitori, în mare parte fermieri în perioadele când Nilul inunda terenurile agricole. Aceștia au transportat blocurile uriașe pe sledge-uri și la umidificat nisipul pentru a reduce frecarea, tehnică care a permis mutarea pietrelor fără aparate mecanice moderne. Alte teorii moderne sugerează utilizarea unor rampe interne sau exterioare pentru ridicarea blocurilor, dar metoda exactă rămâne încă subiect de dezbatere.
+                        Piramida lui Keops a fost mai mult decât un mormânt: ea reprezenta simbolul puterii și al divinității faraonului, un punct de reper vizual și spiritual pentru întreaga societate egipteană. Structura sa monumentală, vizibilă din depărtare, transmitea ideea ordinii universale și a legăturii dintre pământ și cer, în conformitate cu conceptele religioase și cosmologice egiptene. În interior, camerele funerare erau construite astfel încât să protejeze sarcofagul faraonului și să confere securitate maximă obiectelor și tezaurului regal, iar coridoarele erau proiectate cu unghiuri ascunse și blocuri masive pentru a împiedica intrarea prădătorilor sau a hoților de morminte.
+                        Piramida lui Keops este și un exemplu remarcabil de inginerie structurală. Greutatea totală a blocurilor de piatră depășește 6 milioane de tone, iar fiecare element a fost calculat pentru a distribui uniform sarcina și a preveni prăbușirea. Materialele folosite, precum calcarul pentru exterior și granitul pentru camerele interioare, nu erau alese doar pentru frumusețe, ci și pentru durabilitate și rezistență la greutatea imensă a structurii. ă până în prezent, depășită în înălțime doar de construcțiile moderne din oțel și beton. 
+                </td>
+            </tr>    
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+
+
+            <!-- Gradinile Suspendate ale Semiramidei -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea2"></a>
+                    <h1>GRADINILE SUSPENDATE ALE SEMIRAMIDEI DIN BABILON</h1>
+                </td>
+            </tr>
+            <tr align="center">
+                <td style="text-align: justify; padding:10px">
+                    <img src="Gradinile suspendate ale Semiramidei.jpg" style="float: right; width:400px;  margin:10px;">
+                        "Gradinile suspendate ale Semiramidei" - o expresie de partu termeni continand doua inadvertente: gradinile palatului din Babilon nu erau suspendate, iar Semiramida nu putea sa le construiasca fiindca n-a existat... Legenda atat de frumoasei si energicei Semiramida (care a inspirat, de-a lungul anilor, scriitori ca Voltaire si Cr‚billon, compozitori ca Rossini si foarte multi artisti plastici) intemeierea orasului Babilon si initiativa unor lucrari arhitectonice monumentale; unii istorici mai vechi (Herodot) si mai noi au incercat s-o identifice cu Sammuramat care (intre 809-806 i.e.n.) a guvernat Babilonul ca regenta pentru fiul ei, regele asirian Aded-Nirairi III. Oricum, chiar admitand identitatea Semiramida-Sammuramat (deloc certa), celebrele gradini nu-i pot fi atribuite, fiind construite cu peste doua veacuri mai tarziu, de arhitectii regelui Nabucodonosor II (cca. 605-562 i.e.n.), mai putin cunoscut in calitatea sa de ctitor al unor monumente remarcabile, cat prin faptele sale de arme, printre care cucerirea Ierusalimului.
+                        Legenda relateaza ca regele Ninus, casatorit cu Semiramida, vrand sa-i alunge frumoasei regine plictisul si sa-i ofere un mediu mai atragator si mai potrivit cu peisajul asirian cu care era obisnuita, a poruncit sa se inalte gradinile suspendate. De fapt, ele nu erau "suspendate", ci dispuse in terase care se inaltau in trepte, formand un fel de scara uriasa, sub terase aflandu-se incaperi de locuit. Daca luam in consideratie suprafata imensa a gradinilor (cca. 15000 m.p. dupa cele mai plauzibile evaluari), precum si faptul ca arhitectii babilonieni ai vremii nu cunosteau nici cheia de bolta, nici arcul si ca de grinzi metalice nici nu putea fi inca vorba, unicul material de constructie fiind piatra, este limpede ca gradinile "suspendate" se odihneau pe o adevarata padure de cloane. 
+ 	                    Cum a fost rezolvata problema foarte dificila a impermeabilitatii teraselor aflam din textul lui Diodor: "Aceste blocuri erau acoperite cu un strat de trestii imbibate in asfalt; pe acest strat urma un rand dublu de caramizi arse legate cu asfalt; la randul lor, acestea erau acoperite cu foi de porumb pentru a impiedica infiltrarea apei si patrunderea ei in fundatii. Pe acest strat se gasea o masa de pamant vegetal suficienta pentru ca arbori cei mai mari sa prinda radacini. AScest sol artificial era plin de arbori de toate speciile, in stare de a fermeca privirea prin marimea si frumusetea lor". 
+                        In privinta irigarii gradinilor, Diodor este destul de sumar: "Coloanele se ridicau treptat lasand sa patrunda lumina printre spatiile dintre ele [...]. Una singura dintre aceste coloane era goala de la varf pana la baza; ea continea masini hidraulice care pompau din fluviu o mare cantitate de apa, fara ca nimeni sa vada ceva din exterior". Arheologul german Robert Koldewey, care a intreprins sapaturi la Babilon in al doilea deceniu al veacului nostru, vorbeste de "... trei puturi sitate alaturat, in serie: unul central, cu sectiune patrata, alte doua, cu sectiune ovala. Pentru aceasta dispozitie nu se poate gasi alta explicatie decat ca este vorba de o masina hidraulica functionand pe acelasi principiu ca un aparat cu galeti, cu lant". Aceste doua mentiuni (intre care s-au scurs peste doua milenii) sunt departe de a ne oferi o imagine cat mai cuprinzatoare a sistemului de irigare a gradinilor babiloniene - realizare inginereasca de prim rang.
+                        Astazi, pe locul gradinilor nu se mai afla decat un singur arbore - un Tamaris orientalis (soi inrudit cu catina de prin partile noastre) - ultim martor solitar al vegetatiei bogate de mult. Timpul, necrutator, a distrus totul; si nu numai timpul, ci si oamenii: cu multi ani in urma, caramizile si coloanele de piatra au fost utilizate la construirea unui dig de-a lungul Eufratului. Dar nu se cuvine sa-i judecam pe oameni cu prea mare asprime: gradinile erau menite sa-i desfete pe regi, pe cand stavilirea apelor ii ocroteste si-I hraneste si ocroteste pe cei mult
+                </td>
+            </tr>    
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+
+
+            <!-- Templu Dianei din Efes -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea3"></a>
+                    <h1>TEMPLUL DIANEI DIN EFES</h1></td>
+            </tr>
+                <td style="text-align: justify; padding:10px">
+                    <img src="Templul Dianie din Efes.jpg" style="float: left; width:400px; margin:10px;">
+                        În Efes, Asia Mică, se afla templul Artemisei (Diana la romani), zeița naturii și ocrotitoarea oamenilor, păstorilor și navigatorilor. Construcția acestui sanctuar a ridicat probleme datorită solului mlăștinos și activității seismice a zonei, rezolvate prin stratificarea terenului cu cărbune de lemn și saci cu pietre. Spre deosebire de gradinile babiloniene, ale căror arhitecți sunt anonimi, Artemisionul a beneficiat de nume cunoscute: Pixodarus, ciobanul care a descoperit marmura albă; Chersiphron, Metagene și Pacanius, inventatorii sistemelor de transport al coloanelor și arhitravelor; și arhitecții Paeonios și Demetrios, care au finalizat construcția. Construcția a început în jurul anului 650 i.e.n. și a fost inaugurată în 430 i.e.n., durata fiind de circa 220 de ani. Cresus, regele Lidiei, a finanțat proiectul, iar cele 127 de coloane de marmură albă înalte de 18 metri simbolizau cei 127 de principi care s-au ruinat pentru ridicarea templului.
+                        Prima construcție nu a rezistat decât trei sferturi de veac. În 356 i.e.n., un incendiu devastator a distrus templul. Explicația modernă propusă de G. Buscher susține că marmura forma doar scheletul clădirii, peretele fiind din lemn, care s-a mistuit în foc, iar căldura a degradat carbonatul de calciu din marmură, lăsând reziduuri fragile. Incendiul a fost provocat intenționat de Herostrat, dorind nemurirea numelui său în istorie. Trei decenii mai târziu, Alexandru cel Mare s-a oferit să suporte refacerea templului, dar efesienii au refuzat, încredințând lucrările arhitectului Deinocrates și sculptorului Scopas, fondurile provenind din donații locale, vânzarea coloanelor vechi și bijuterii donate de femeile din Efes.
+                        Noua construcție era mai impunătoare și bogat ornamentată. Artemisionul a devenit nu doar un centru religios, ci și un muzeu al artelor plastice. Sculpturile lui Scopas au fost completate de Praxiteles, iar pictorul Apelles, originar din Efes, a realizat tablouri celebre, inclusiv un portret al lui Alexandru calare, pentru care a primit aproximativ 500 kg de aur. Regii cuceritori, fie din Asia Mică, fie din Grecia continentală, respectau și sprijineau templul, contribuind la împodobirea lui.
+                        Totuși, sanctuarul a suferit numeroase distrugeri. În 262 e.n., gotii au jefuit Efesul, luând toate podoabele Artemisionului. Refăcut cu dificultate, templul a fost abandonat definitiv după edictul împăratului Teodosie I din 392, care interzicea edificiile de cult păgâne. Jaful a continuat de-a lungul secolelor: între 532-537, Anthemios din Tralles și Isidor din Milet, cu sprijinul împăratului Justinian, au transportat opt coloane de marmură verde la Bizanț, folosite la construirea bisericii Sf. Sofia. Alte materiale au servit la construirea bazilicii Sf. Ioan din Efes și a unei citadele. Ulterior, trecerea arabilor (cca. 700 e.n.), ocupația turcilor selgiucizi după 1090 și luptele dintre cruciați și musulmani au afectat templele și ruinele rămase.
+                        Arheologii și arhitecții contemporani încearcă să reconstituie Artemisionul, folosind coloanele de la Sf. Sofia, capitelurile ionice, fragmente din British Museum și descoperirile din Aya-Soluk, așezare situată pe colina fostului sanctuar. Cea mai verosimilă reconstrucție pare cea realizată de A. E. Henderson.
+                        Un episod bizar și grotesc al istoriei Artemisionului este cel al lui Herostrat, care a incendiat templul pentru a-și face numele nemuritor. Deși senatul efesian interzisese pronunțarea numelui său sub pedeapsa cu moartea, acesta apare astăzi în enciclopedii și lucrări de istorie, beneficiind astfel de o celebritate tristă și falsă.
+                        Astăzi, Artemisionul rămâne un simbol al geniului arhitectural și artistic al Antichității, inspirând cercetători și pasionați de istorie din întreaga lume.
+                </td>
+            </tr>    
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+
+
+            <!-- Monumentul lui Mausol din Halicarnas -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea4"></a>
+                    <h1>MONUMENTUL LUI MAUSOL DIN HALICARNAS</h1>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: justify; padding:10px">
+                    <img src="Monumentul lui Mausol din Halicarnas.jpg" style="float: right; width:400px; margin:10px;">
+                        Majoritatea incercarilor de reconstituire a Mausoleului ni-l prezinta ca pe un edificiu patrat, inalt de cca. 50 metri, sustinut de coloane si avand un acoperamant in forma de piramida, in varful caruia o cvadriga (car triumfal tras de patru cai) ii purta pe Mausol si Artemisa. Printre constructori gasim arhitecti si sculptori vestiti ai vremii - Timotheos, Leochares, Bryaxis, precum si Scopas; acesta din urma a lucrat, dupa cum am vazut, si la impodobirea Artemisionului, iar Mausoleul a fost una dintre realizarile sale - se pare ca murit (in varsta de 70 de ani) in 350 i.e.n., care este si anul terminarii monumentului din Halicarnas. Vitruviu nu exclude nici participarea lui Praxiteles (in locul lui Timotheos) - numarul constructorilor mentinandu-se constatnt la patru, caci initiasera un soi de intrecere pentru impodobirea fiecareia dintre cele patru fatade ale monumentului.
+                        Mausoleul a supravietuit cateva veacuri (in ciuda ocuparii succesive a Halicarnasului de catre persi, macedoneni, romani, turci s.a.), pana la sosirea cavalerilor ordinului "Sfantului Ioan" (ioaniti); acestia vor sta aici din 1309 pana in 1522, cand Soliman Magnificul, dupa un asediu de sase luni, cucereste insula, in ciuda rezistentei darze organizate de marele maestru al ordinului, Villiers de l'Isle Adam (un stramos al scriitorului cu acelasi nume, din secolul XIX).
+                        In cele peste doua veacuri cat insula s-a aflat sub ocupatia lor, Cavalerii de Rhodos (viitorii Cavaleri de Malta), au folosit monumentul "pagan" de la Halicarnas ca pe o cariera de piatra; transformati dintr-un ordin ospitalier intr-unul eminamente razboinic, siliti sa faca fata unor frecvente atacuri si asedii, construiau in permanenta fortificatii si alte lucrari de aparare. O parte a marmurei mausoleului a fost transformata in pulbere pentru fabricarea mortarului sau, prin ardere, pentru obtinerea varului. Marturii din acea vreme atesta ca, atunci cand au fost distruse temeliile, a fost descoperita o sala mare, din marmura de diferite culori, bogat ornamentata, de unde pornea un culoar catre o sala mai mica unde se afla un sarcofag. Deoarece se lasa seara si lipseau uneltele adecvate, deschiderea sarcofagului de marmura a fost amanata pentru a doua zi; dar in cursul noptii raufacatorii s-au furisat in sala golind sarcofagul, si astfel continutul lui a ramas pierdut pentru totdeauna, ba nici macar nu posedam un inventar cat de sumar al obiectelor aflate in sala funerara.
+                        Este una dintre multele pricini pentru care, in ceea ce priveste incercarile de reconstituire a Mausoleului, ne aflam intr-o situatie asemanatoare cu cea legata de reconstituirea Artemisionului: fragmente gasite in fortificatiile din Rhodos, in zidurile fostelor edificii ale cavalerilor, la temelia unor modeste case ale localitatii turcesti Budrum si in locurile cele mai incredibile - in Villa di Negro din Genova, de pilda, a fost gasita (in 1865) o placa din friza ce reprezenta lupta grecilor cu amazoanele. Cum a ajuns acest fragment din Asia Mica in Italia? Nu stim, si probabil ca n-o vom afla niciodata, desi ipotezele nu lipsesc: in perioada medievala, republica Genova intretinea vaste relatii comerciale cu regiunile rasaritene si nu este exclus ca vre-un negutator intrepid sa fi gasit pentru fragmentele splendidei frize un loc in cala corabiei sale, alaturi de mirodeniile, tesaturile si celelalte marfuri occidentale
+                        Alte fragmente (printre care unele din aceeasi friza zisa a amazoanelor) se gasesc azi tot la British Museum (intr-o celebra "Sala a Mausoleului") - provenienta acestore fiind de altfel cunoscuta: in 1846, Stratford Canning, ambasadorul britanic pe langa Sublima Poarta si, zece ani mai tarziu, Charles T. Newton, viceconsul britanic la Mitilene (antica Lesbos) le-au transportat, cu permisiunea sultanului, la Londra; de unde concluzia ca activitatea diplomatica, legata de chestiunile politice la ordinea zilei, nu exclude nicidecum interesul pentru vremurile demult apuse constituind domeniul arheologiei...
+                </td>
+            </tr>    
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+
+
+            <!-- Statuia lui Zeus din Olimpia -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea5"></a>
+                    <h1>STATUIA LUI ZEUS DIN OLIMPIA</h1>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: justify; padding:10px">
+                    <img src="Statuia lui Zeus din Olimpia.jpg" style="float: left; width:400px; margin:10px;">
+                        În Grecia continentală, în Thessalia, la poalele muntelui Cronion și nu departe de țărmul Mării Ionice, se afla Olimpia, vestită nu pentru dimensiunile sau puterea sa militară, ci ca principal centru al cultului lui Zeus și locul desfășurării jocurilor olimpice. Șapte drumuri conduceau spre Olimpia, dintre care calea sacra, lungă de zece kilometri, lega tărâmul mării de sanctuar, fiind străjuită de temple, altare și statui. Vreme de peste un mileniu, în perioada jocurilor olimpice, greci din Europa și Asia Mică, prieteni sau dușmani, uitau rivalitățile și suspendau conflictele, îndreptându-se spre sanctuarul lui Zeus, încărcați cu daruri și pregătiți să asiste la ceremonii într-un spirit de solidaritate panhelenică.
+                        Templul lui Zeus, finalizat în anul 457 i.e.n., avea aproximativ 64 de metri lungime și aproape 28 metri lățime. Construcția i-a fost încredințată lui Libon din Eleea, decorarea frontului anterior, reprezentând lupta lui Pelops cu Oenomaos, lui Paconios din Mendes, iar a frontului posterior, lupta centaurilor cu lapitii, lui Alcamenes. În acest impresionant edificiu a fost așezată statuia lui Zeus, realizată de sculptorul Fidias, reprezentând zeul cu sprâncenele încruntate, mânuind fulgerele. Fidias, considerat cel mai apreciat sculptor al vremii, mai celebru decât contemporanii săi Miron („Discobolul”) și Policlet („Doryphor”), s-a născut între 490-495 i.e.n., probabil la Atena. Pericle îi solicita sfatul pentru treburile cetății. Conform lui Pausanias, pe soclul statuii lui Zeus era gravată inscripția: „Fidias Atenianul, fiul lui Charmidas, m-a creat”. Printre operele sale de referință se numără două statui ale Atenei – una criselefantină și una de bronz – și statuia lui Zeus Olimpicul. Fidias a murit în jurul anului 431 i.e.n., ceea ce permite estimarea inaugurării statuii între 437-431 i.e.n.
+                        Descrierile lui Strabon și Pausanias ne oferă detalii asupra statuii, fără a menționa exact anul inaugurării. Statuia, înaltă de 15 metri, îl înfățișa pe Zeus așezat pe un tron, aproape atingând plafonul, creând impresia că ar ridica acoperișul edificiului dacă s-ar ridica în toată înălțimea sa. Tronul, din abanos și bronz, cu brațele sprijinite de sfincși, era bogat decorat cu fildes, aur și pietre prețioase. Trupul zeului era din lemn de abanos acoperit cu fildes pentru piele, iar îmbrăcămintea și încălțările erau turnate din aur. Zeul purta o coroană din frunze de măslin, în mâna dreaptă ținea statuia Nika, zeița Victoriei, iar în stânga un sceptru cu un vultur.
+                        Folosirea tehnicii criselefantine, lemn îmbrăcat în fildes și aur, ridică întrebări, deoarece aceste materiale sunt mai fragile decât marmura sau bronzul, mai potrivite pentru simplitatea artistică grecească. Conform lui G. și T. Chitulescu, tehnica criselefantină era rară, utilizată când se dorea oferirea unei marturii excepționale de pietate, recunoștință sau, mai omenesc, vanitate. Statuia, ca și alte minuni antice, s-a născut mai mult din dorința de a uimi și a minuna decât din intenția unui omagiu pios.
+                        Dispariția statuii rămâne incertă, dar există mai multe ipoteze. Decăderea Olimpiei a urmat edictului imperial din 393, care interzicea ceremoniile și jocurile olimpice, iar doi ani mai târziu expeditiile gotilor, cunoscuți amatori de aur, ar fi putut afecta statuia. De asemenea, decretul din 426 e.n. al împăratului Teodosie II poruncea distrugerea lăcașelor de cult pagane. Alte ipoteze sugerează pierderea statuii în incendiul templului din 408 sau în incendiul care a mistuit o parte din Constantinopol în 475, unde statuia ar fi putut fi transportată de ordinul împăratului. Toate aceste teorii rămân neconfirmate.
+                        Cercetările arheologice efectuate la Olimpia, de Spencer Stanhope, Quatremere de Quincy, Ernest Curtius și alții, au scos la lumină mii de obiecte, inclusiv peste o sută de statui și basoreliefuri din bronz, marmură și piatră, însă niciun vestigiu al statuii lui Zeus Olimpicul nu a fost găsit. Această lipsă subliniază tragica sete de aur a omenirii, care a contribuit la fragilizarea materialelor și la pierderea unei minuni a lumii antice.
+                        Astăzi, Olimpia rămâne simbolul spiritualității și al excelenței artistice grecești, iar statuia lui Zeus Olimpicul continuă să inspire cercetători și pasionați de istorie din întreaga lume. Descoperirile recente au ajutat la reconstrucția imaginară a statuii, dar frumusețea și măreția sa originale rămân pierdute pentru posteritate, reflectând atât geniul artistic al Antichității, cât și efemeritatea gloriei materiale.
+                </td>
+            </tr>    
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+
+
+            <!-- Farul din Alexandria -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea6"></a>
+                    <h1>FARUL DIN ALEXANDRIA</h1>
+                </td>
+            <tr>
+                <td style="text-align: justify; padding:10px">
+                    <img src="Farul Din Alexandria.jpg" style="float: right; width:400px; margin:10px;">
+                        Dacă rolul de far al Colosului este controversat, printre cele șapte minuni antice găsim Farul de pe insula egipteană Faros, în fața orașului Alexandria, fondat de Alexandru în 331 i.e.n. Homer, în Odiseea, menționează insula: „Pe marea valuroasă-n dreptul apei Egipetul este ostrovul Faros…”. Deoarece textul homeric precede orașul, se consideră că insula a dat numele construcției. Termenul „far” a pătruns în multe limbi, inclusiv în română.
+                        Construcția Farului a fost realizată în timpul domniei lui Ptolomeu II Filadelful (285-246 i.e.n.), protector al artelor și literelor, inițiator al traducerii Bibliei pentru biblioteca din Alexandria. Farul a rezistat aproape 1.500 de ani. Inscripția originală descoperită ulterior ne indică constructorul: Sostrate din Cnid, care l-a dedicat zeilor salvatori pentru navigatori.
+                        Înălțimea și aspectul provin din relatările călătorilor arabi. Al-Idrisi estima 300 de coti, adică 170-180 metri, iar sursele grecești menționează 272 metri. Farul avea trei turnuri suprapuse: pătrat, octogonal și cilindric, cu terase. Fundatiile au fost complexe; tradiția arabă spune că Sostrate a folosit granit, caramizi, metale și sticlă pentru a testa rezistența. Sticla a rezistat cel mai bine, iar blocurile de piatră au fost legate cu plumb topit.
+                        O chestiune controversată este oglinzile concave, care ar fi intensificat lumina pe timp de noapte și ar fi putut incendia navele inamice. Unele surse descriu oglinzile din metal lustruit, altele din sticlă; prima versiune pare mai credibilă. Construcția este atribuită lui Arhimede, care a studiat în Alexandria în perioada construirii Farului.
+                        Lumina Farului avea o rază impresionantă: Flavius Josephus menționează 300 stadii (peste 50 km), iar unele surse ajungeau până la 200 km. Farul a rezistat calamitatilor naturale și furiei oamenilor. Edictul împăratului Teodosie nu l-a afectat semnificativ, fiind utilitar într-un port aglomerat. Terasele erau decorate cu statui ale zeului Poseidon și ale zeiței Isis.
+                        Sub imperiul bizantin, Farul a fost reparat de împăratul Anastasie I (491-518 e.n.). La două veacuri după cucerirea Alexandriei de arabi, un agent bizantin a păcălit califul Al-Walid să înceapă demolarea Farului, crezând că sub fundații erau bogății ascunse. Aproape jumătate a fost distrus. Reconstrucțiile ulterioare au reușit parțial; oglinda nu a mai putut fi reinstalată. Cutremurele din 1182, 1303 și 1375 au dărâmat complet Farul.
+                        Cercetările arheologice au descoperit fragmente, inclusiv statuile lui Poseidon și Isis, dar terenul inundat și aluviunile au complicat investigațiile. Farul a avut longevitate datorită funcției sale practice, caracter care lipsea altor monumente. Tehnica și organizarea teraselor, razele de lumină și rezistența la mediul marin au demonstrat măiestria arhitecturală a Antichității.
+                        Farul a combinat frumusețea estetică cu utilitatea practică, inspirând generații de arhitecți și navigatori. Tehnica, fundatiile solide și aspectul funcțional îl fac un simbol al ingeniozității elenistice, demonstrând cum o construcție poate îmbina scop utilitar, măreție artistică și simbolism. Astăzi rămân ruine și fragmente, dar legenda sa continuă să influențeze ingineria și arhitectura modernă, fiind reper al progresului tehnic și adaptării la mediu.
+                        Astăzi, Farul nu mai există decât în ruine, dar evocă spiritul inventiv al lumii antice, amintind de rolul civilizației elenistice în promovarea științei, artei și ingineriei. Monumentul, combinând frumusețea estetică cu funcționalitatea practică, rămâne un exemplu de referință pentru inginerie, navigație și istorie.
+                        Farul, prin tehnica sa ingenioasă, rezistența la mediul marin, organizarea în terase și capabilitatea de a ghida navele pe distanțe mari, constituie o demonstrație clară a capacităților inginerești ale Antichității. De asemenea, asocierea cu Arhimede și ideea oglinzilor incendiatoare reflectă legătura dintre știință, strategie militară și arhitectură, fiind un simbol al ingeniozității colective a culturii elenistice.
+                        Însumând toate aceste aspecte, Farul din Alexandria devine nu doar un monument vizual impresionant, ci și un reper al progresului tehnic, al adaptării la mediu și al creativității umane, demonstrând cum o construcție poate combina scop utilitar, măreție artistică și funcție simbolică, un model de inspirație pentru generațiile viitoare de ingineri, arhitecți și navigatori.
+                </td>
+            </tr>    
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+
+
+            <!-- Colosul din Rodhos -->
+            <tr align="center" style="background-color: lightblue;">
+                <td>
+                    <a name="Minunea7"></a>
+                    <h1>COLOSUL DIN RODHOS</h1></td>
+            </tr>  
+                <td style="text-align: justify; padding:10px">
+                    <img src="Colosul Din Rhodos.jpg" style="float: left; width:400px; margin:10px;">
+                        La sud de Halicarnas, cam la 25 km de coasta Asiei Mici, se afla o insula in forma ovala, in suprafata de 1400 mp: Rhodos, patria unor iscusiti navigatori si - intr-un trecut mai indepartat - adoratori ai lui Helios (zeul soarelui) si cultivatori ai artelor. Dupa Diodor, heliolatria rhodienilor isi are originea in povestea de dragoste dintre Helios si Rodha; aceasta din urma, fiica lui Neptun, l-a convins pe zeu sa salveze insula de inundatii, daruind pamantului rodnicie, si de atunci "locuitorii ei venereaza mai mult ca pe oricare dintre zei pe Helios, pe care il considera stramosul neamului lor". Despre iscusinta navigatorilor rhodieni si intinsele lor relatii comerciale sta marturie faptul ca au intemeiat colonii in locuri indepartate ca Italia, Sicilia si Spania, iar catre miazanoapte pe coasta Marii Negre: la Histria s-a gasit un cap de statuie care trebuie sa fi masurat circa patru metri, lucrat in tehnica scolii rhodiene. In cetatea Rhodos, capitala insulei, functionau celebre scoli de elocinta (Eschin), de pictura (Apelles) si de filosofie, iar mai tarziu insusi Cezar, tanar, va veni de la Roma sa urmeze aici cursurile de retorica a lui Apollonius Molo. Pliniu, citand pe consulul roman Mucianus, ne informeaza ca in secolul I e.n. insula avea inca 3000 de statui, dintre care o suta de proportii gigantice.
+                        Colosul din Rhodos, lucrare a lui Chares din Lindos, elevul favorit al vestitului Lisip, era menit sa imortalizeze rezistenta glorioasa a rhodienilor asediati de armata de mercenari a lui Demetrios - care cuprindea 40 000 de soldati si 200 de nave de lupta - unul dintre numeroasele conflicte nascute dupa moartea lui Alexandru cel Mare in imperiul sau sfasiat de ambitiile si lacomia diferitilor generali, tirani sau satrapi. Statuia, reprezentand pe Helios, protectorul insulei si al cetatii Rhodos, a fost realizata din metalul masinilor de razboi si al armelor (berbeci, baliste, catapulte, suliti, sageti, scuturi) parasite de Demetrios; cu toate acestea, costase, dupa cum ne informeaza unii autori antici, 300 talanti - echivalentul a peste sapte tone de aur!
+                        Amplasat la intrarea unuia dintre porturi, inalt de peste 30 metri (unele texte indica aproape 40 m), colosul a avut existenta cea mai scurta dintre toate cele sapte minuni: un puternic cutremur de pamant l-a doborat la numai 56 de ani dupa ridicarea lui. "Dar si asa, doborat", ne spune Pliniu, "trezeste admiratia. Putini oameni ii pot imbratisa degetul mic; degetele sunt mai groase decat partea cea mai mare a unei statui. Golul membrelor rupte se aseamana cu niste caverne".
+                        Persista, totusi, unele chestiuni controversate in legatura cu Colosul din Rhodos. Mai intai, amplasarea: fundatii din perioada helenistica s-au gasit atat in Portul Mare cat si in Portul Galerelor, unde s-a construit ulterior un fort; apoi, pozitia: nu se stie daca era asezat pe un soclu unic, sau cu fiecare picior pe cate un soclu, astfel ca navele sa poata trece pe dedesubt - pentru prima pozitie pledeaza cele mai multe texte antice; in sfarsit, nu stim in ce masura putem acorda incredere unor texte (in general tarzii) dupa care, in afara de scopul sau comemorativ, Colosul avea si unul practic - acela de a servi ca far: rhodienii ar fi intretinut un foc continuu la capatul unei torte din mana statuii sau in orbitele ochilor ei. Singurele imagini ale Colosului care ni s-au pastrat - efigii pe diferite monezi antice, unele dintre aceste efigii fiind si ele contestate - nu ne pot da raspunsul la aceste chestiuni: monezile redau numai imaginea capului, iar unii specialisti sunt de parere ca nici nu este vorba macar de capul colosului, ci pur si simplu de al zeului Helios, asa cum si-l inchipuiau gravorii de monezi ai antichitatii.
+                </td>
+            </tr>
+            <tr border="2" width="100%" cellpadding="15">
+                <td align="center" bgcolor="#99ddff">
+                    <a href="#up">
+                        <font size="5"><b>⬆ MERGI SUS</b></font>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2026 Toate drepturile rezervate. Pagina realizată de Cebanu Catalin.</p>
+    </footer>
+</body>
+</html>

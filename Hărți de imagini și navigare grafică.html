@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebanu Catalin - Hărți de imagini și navigare grafică.</title>
+    <style>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 4px 8px;
+        }
+
+        main {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            flex: 1;
+            display: flex;           
+            flex-direction: column;  
+            align-items: center;     
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: gainsboro;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+       table {
+            width: 100%;             
+            max-width: 800px;        
+            margin: 20px auto;       
+            border-collapse: collapse;
+            background-color: rgb(255, 255, 255);
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Stil pentru desktop */
+        @media (min-width: 769px) {
+            table td:first-child {
+                width: 200px;
+                vertical-align: top;
+            }
+
+            table td:last-child {
+                width: auto; 
+            }
+        }
+
+        /* Responsive pentru telefon */
+        @media (max-width: 768px) {
+
+            table {
+                width: 95%;
+            }
+
+            img {
+                float: none !important;
+                display: block;
+                max-width: 90%;      
+                height: auto;        
+                padding: 0 5px;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+                padding: 5px 0;
+            }
+
+            header nav a {
+                margin: 2px 0;
+                padding: 4px 10px;
+            }
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000000; 
+            padding: 10px 20px; 
+            font-size: 18px; 
+            border: 2px solid #4CAF50; 
+            cursor: pointer;
+            border-radius: 12px; 
+            text-align: center;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s; 
+        }
+
+        .dropbtn:hover {
+            background-color: rgba(255, 255, 255, 1); 
+            transform: scale(1.05); 
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 50%; 
+            transform: translateX(-50%); 
+            border-radius: 8px; 
+            overflow: hidden;
+            top: 155%;
+        }
+
+        .dropdown-content a {
+                color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<script>
+    function toggleDropdown(event){
+        event.preventDefault();
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+<body>
+    <!-- Antetul paginii -->
+    <header>
+        <h1>Portofoliu la CSW</h1>
+        <nav>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Navigare ▼</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="Cebanu Catalin - CV.html">CV</a>
+                    <a href="Lista - Examenele de BAC.html">Examene BAC</a>
+                    <a href="Lista - Bagajelor pasagerilor rutei 7021.html">Lista Bagaje</a>
+                    <a href="Tabele HTML.html">Tabele</a>
+                    <a href="index.html">7 Minuni</a>
+                    <a href="Hărți de imagini și navigare grafică.html">Harti de imagini</a>
+                    <a href="Harta Moldovei Pe Raioane.html">Harta Moldovei pe Raioane</a>
+                    <a href="Formulare.Proba Practica.html">Formulare</a>
+                    <a href="Multimedia in HTML.html">Multimedia in HTML</a>
+                    <a href="Galerie de Imaginii - Cele 7 minuni ale Lumii Antice.html">Galerie de Imagini - Cele 7 Minuni</a>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Conținutul principal al paginii -->
+    <main>
+        <h2 align="center">Harti de Imagini si navigare grafica</h2>
+        <br>
+		<h3 align="center">Exemplu de harta-imagine - Exercitiul 1:</h3>
+		<table border="1" align="center" width=30%>
+			<tr align="center">
+				<td><img src="imagine1.jpg" border="0"  usemap="#limbaje">
+				<map name="limbaje">
+				<area shape="rect" coords="43,26,133,96" href="https://en.wikipedia.org/wiki/Java">
+				<area shape="poly" coords="27,157,87,132,151,153,148,199,89,213,27,197" href="https://en.wikipedia.org/wiki/HTML">
+				<area shape="circle" coords="237,123,53" href="https://en.wikipedia.org/wiki/Pascal">
+				</map></td>
+			</tr>
+		</table>
+		
+		<h3 align="center">Doar coroana circulara este zona activa - Exercitiul 2:</h3>
+		<table border="1" align="center" width=30%>
+			<tr align="center">
+				<td><img src="imagine2.jpg" border="0"  usemap="#coroana">
+				<map name="coroana">
+				<area shape="circle" coords="117,105,30" nohref>
+				<area shape="circle" coords="116,104,76" href="https://en.wikipedia.org/wiki/Crown_Jewels_of_the_United_Kingdom">
+				</map></td>
+			</tr>
+		</table>
+		
+		<h3 align="center">Scriitori Romani - Exercitiul 3:</h3>
+		<table border="1" align="center" width=30%>
+			<tr align="center">
+				<td><img src="imagine3.jpg" border="0"  usemap="#scriitori">
+				<map name="scriitori">
+				<area shape="circle" coords="108,135,40" href="https://ro.wikipedia.org/wiki/Mihai_Eminescu">
+				<area shape="circle" coords="187,106,21" href="https://ro.wikipedia.org/wiki/Ion_Creang%C4%83">
+                <area shape="circle" coords="32,73,24" href="https://ro.wikipedia.org/wiki/Ion_Luca_Caragiale">
+                <area shape="circle" coords="115,47,24" href="https://ro.wikipedia.org/wiki/Ioan_Slavici">
+				</map></td>
+			</tr>
+		</table>
+		
+	</main>
+
+    <!-- Subsolul paginii -->
+    <footer>
+        <p style="margin-bottom: 1px;">&copy; 2026 Toate drepturile rezervate. Pagina realizată de</p>
+        <p style="text-align: center; margin-bottom: 1px;">Cebanu Catalin.</p>
+    </footer>
+</body>
+</html>

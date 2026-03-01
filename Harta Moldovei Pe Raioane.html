@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebanu Catalin - Harta Moldovei pe Raioane.</title>
+    <style>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 4px 8px;
+        }
+
+        main {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            flex: 1;
+            display: flex;           
+            flex-direction: column;  
+            align-items: center;     
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: gainsboro;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+       table {
+            width: 100%;             
+            max-width: 800px;        
+            margin: 20px auto;       
+            border-collapse: collapse;
+            background-color: rgb(255, 255, 255);
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* Stil pentru desktop */
+        @media (min-width: 769px) {
+            table td:first-child {
+                width: 200px;
+                vertical-align: top;
+            }
+
+            table td:last-child {
+                width: auto; 
+            }
+        }
+
+        /* Responsive pentru telefon */
+        @media (max-width: 768px) {
+
+            table {
+                width: 95%;
+            }
+
+            img {
+                width: 100% !important;
+                height: auto !important;
+                float: none;
+                display: block;
+                padding: 0;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+                padding: 5px 0;
+            }
+
+            header nav a {
+                margin: 2px 0;
+                padding: 4px 10px;
+            }
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000000; 
+            padding: 10px 20px; 
+            font-size: 18px; 
+            border: 2px solid #4CAF50; 
+            cursor: pointer;
+            border-radius: 12px; 
+            text-align: center;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s; 
+        }
+
+        .dropbtn:hover {
+            background-color: rgba(255, 255, 255, 1); 
+            transform: scale(1.05); 
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 50%; 
+            transform: translateX(-50%); 
+            border-radius: 8px; 
+            overflow: hidden;
+            top: 155%;
+        }
+
+        .dropdown-content a {
+                color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<script>
+    function toggleDropdown(event){
+        event.preventDefault();
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+    window.onload = function() {
+        imageMapResize(); // ajustează automat coordonatele după dimensiunea imaginii
+    };
+</script>
+
+
+<body>
+    <!-- Antetul paginii -->
+    <header>
+        <h1>Portofoliu la CSW</h1>
+        <nav>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Navigare ▼</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="Cebanu Catalin - CV.html">CV</a>
+                    <a href="Lista - Examenele de BAC.html">Examene BAC</a>
+                    <a href="Lista - Bagajelor pasagerilor rutei 7021.html">Lista Bagaje</a>
+                    <a href="Tabele HTML.html">Tabele</a>
+                    <a href="index.html">7 Minuni</a>
+                    <a href="Hărți de imagini și navigare grafică.html">Harti de imagini</a>
+                    <a href="Harta Moldovei Pe Raioane.html">Harta Moldovei pe Raioane</a>
+                    <a href="Formulare.Proba Practica.html">Formulare</a>
+                    <a href="Multimedia in HTML.html">Multimedia in HTML</a>
+                    <a href="Galerie de Imaginii - Cele 7 minuni ale Lumii Antice.html">Galerie de Imagini - Cele 7 Minuni</a>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Conținutul principal al paginii -->
+    <main>
+		<h2 align="center">Raioanele Republicii Moldova</h2>
+		<table border="1" align="center" width=auto>
+			<tr align="center">
+				<td><img src="moldova.png" border="0"  usemap="#hartamoldovei">
+				<map name="hartamoldovei">
+				<area target="_blank" alt="Briceni" title="Briceni" href="https://briceni.md/" coords="86,165,181,215,243,181,225,127,134,121" shape="poly">
+                <area target="_blank" alt="Ocnita" title="Ocnita" href="https://ocnita.md" coords="234,142,296,190,334,141,401,126,319,84" shape="poly">
+                <area target="_blank" alt="Edinet" title="Edinet" href="https://edinet.md/" coords="222,289,189,236,240,189,253,166,292,193,306,245" shape="poly">
+                <area target="_blank" alt="Donduseni" title="Donduseni" href="https://donduseni.md/" coords="345,248,298,192,352,139,397,131,398,168" shape="poly">
+                <area target="_blank" alt="Soroca" title="Soroca" href="https://www.primsoroca.md/ro/" coords="391,174,442,231,431,261,556,246,517,179,403,143" shape="poly">
+                <area target="_blank" alt="Drochia" title="Drochia" href="https://drochia.md/" coords="381,326,438,290,409,195,341,252" shape="poly">
+                <area target="_blank" alt="Rascani" title="Rascani" href="https://rascani.md/" coords="245,357,298,321,389,355,393,329,337,289,309,243,221,290" shape="poly">
+                <area target="_blank" alt="Glodeni" title="Glodeni" href="http://glodeni.md/" coords="281,422,245,373,296,327,369,350" shape="poly">
+                <area target="_blank" alt="Falesti" title="Falesti" href="https://falesti.md/" coords="285,423,329,405,353,376,376,351,424,407,411,458,329,502" shape="poly">
+                <area target="_blank" alt="Balti" title="Balti" href="https://balti.md/" coords="394,369,417,365,410,345" shape="poly">
+                <area target="_blank" alt="Sangereni" title="Sangereni" href="http://sangereni.md/" coords="417,464,469,466,475,428,523,430,524,384,435,309,422,349" shape="poly">
+                <area target="_blank" alt="Floresti" title="Floresti" href="https://floresti.md/" coords="437,274,529,275,559,225,600,281,539,378,478,341,446,309" shape="poly">
+                <area target="_blank" alt="Soldanesti" title="Soldanesti" href="https://soldanesti.md/" coords="557,366,580,314,613,269,656,309,620,364" shape="poly">
+                <area target="_blank" alt="Rezina" title="Rezina" href="https://consiliu.rezina.md/" coords="665,309,682,438,579,389" shape="poly">
+                <area target="_blank" alt="Telenesti" title="Telenesti" href="https://telenesti.md/" coords="477,445,473,473,557,478,595,431,567,369" shape="poly">
+                <area target="_blank" alt="Ungheni" title="Ungheni" href="https://ungheni.md/" coords="444,629,419,557,476,501,406,467,332,506,408,615" shape="poly">
+                <area target="_blank" alt="Calarasi" title="Calarasi" href="https://calarasi.md/" coords="446,543,501,577,545,557,538,535,565,509,551,478,483,481" shape="poly">
+                <area target="_blank" alt="Orhei" title="Orhei" href="https://orhei.md/index.php?l=ro" coords="557,482,585,514,625,561,629,537,685,517,707,462,653,429,609,417" shape="poly">
+                <area target="_blank" alt="Nisporeni" title="Nisporeni" href="https://nisporeni.md/" coords="455,665,492,668,510,615,493,581,427,553" shape="poly">
+                <area target="_blank" alt="Straseni" title="Straseni" href="https://www.straseni.md/" coords="500,586,565,611,586,631,625,574,571,522" shape="poly">
+                <area target="_blank" alt="Criuleni" title="Criuleni" href="https://criuleni.md/index.php?l=ro" coords="621,581,636,541,692,520,703,485,715,528,758,581,720,644,678,620,711,598,667,601" shape="poly">
+                <area target="_blank" alt="Chisinau" title="Chisinau" href="http://chisinau.md/" coords="701,679,677,617,696,604,650,600,621,589,596,613,656,685" shape="poly">
+                <area target="_blank" alt="Ialoveni" title="Ialoveni" href="https://ialoveni.md/" coords="561,623,594,677,617,725,641,745,653,724,678,743,709,728,707,714,621,651,602,628" shape="poly">
+                <area target="_blank" alt="Hancesti" title="Hancesti" href="http://hancesti.md/" coords="458,669,492,772,526,781,529,753,583,757,608,719,574,661,537,618,490,665" shape="poly">
+                <area target="_blank" alt="Anenii noi" title="Anenii noi" href="https://anenii-noi.md/" coords="695,632,709,686,740,737,753,711,802,674,762,653,770,605,722,649" shape="poly">
+                <area target="_blank" alt="Causeni" title="Causeni" href="https://causeni.md/" coords="717,725,669,749,681,779,706,771,704,818,744,801,747,864,773,825,792,841,800,822,800,783,854,755,864,724,856,709" shape="poly">
+                <area target="_blank" alt="Tighina" title="Tighina" href="http://tighina.md/" coords="790,689,795,697,809,701,808,685" shape="poly">
+                <area target="_blank" alt="Leova" title="Leova" href="http://leova.md/index.php?l=ro" coords="498,776,493,852,578,867,576,765" shape="poly">
+                <area target="_blank" alt="Cimislia" title="Cimislia" href="http://cimislia.md/" coords="580,833,637,851,674,810,698,827,699,774,675,775,660,740,592,753" shape="poly">
+                <area target="_blank" alt="Stefan voda" title="Stefan voda" href="https://stefan-voda.md/" coords="805,821,853,867,882,825,918,869,992,838,880,779,861,753,810,789" shape="poly">
+                <area target="_blank" alt="Basarabeasca" title="Basarabeasca" href="https://basarabeasca.md/" coords="665,877,624,905,657,896,682,904,681,842,693,832,678,816,651,842" shape="poly">
+                <area target="_blank" alt="Gagauzia" title="Gagauzia" href="http://gagauzia.md/" coords="585,840,653,868,621,886,624,905,683,907,661,1001,629,989,608,1028,578,985,578,946" shape="poly">
+                <area target="_blank" alt="Cantemir" title="Cantemir" href="https://www.cantemir.md/" coords="487,860,537,871,565,876,571,901,571,931,543,976,467,971" shape="poly">
+                <area target="_blank" alt="Cahul" title="Cahul" href="https://cahul.md/ro" coords="561,965,460,977,464,1163,491,1208,511,1176,522,1102,564,1111,533,1071" shape="poly">
+                <area target="_blank" alt="Gagauzia" title="Gagauzia" href="http://gagauzia.md/" coords="525,1110,567,1115,553,1133,554,1161,569,1179,520,1186" shape="poly">
+                <area target="_blank" alt="Gagauzia" title="Gagauzia" href="http://gagauzia.md/" coords="581,1063,585,1076,632,1063,633,1051" shape="poly">
+                <area target="_blank" alt="Taraclia" title="Taraclia" href="https://taraclia.md/" coords="695,920,676,944,667,985,673,1005,694,997,709,932" shape="poly">
+                <area target="_blank" alt="Taraclia" title="Taraclia" href="https://taraclia.md/" coords="575,986,557,986,555,1037,561,1049,540,1055,580,1109,590,1090,614,1084,580,1073,577,1057,626,1044,623,1022,597,1025" shape="poly">
+                <area target="_blank" alt="Taraclia" title="Taraclia" href="https://taraclia.md/" coords="560,1138,559,1157,576,1153,573,1142" shape="poly">
+                <area target="_blank" alt="Dubasari" title="Dubasari" href="http://dubasari.md/" coords="556,213,572,203,640,218,652,250,684,286,721,264,741,371,724,423,741,472,833,501,821,585,943,713,944,786,926,795,886,774,873,745,867,702,848,696,828,700,814,653,801,642,783,653,778,629,785,614,719,520,721,497,704,480,713,464,701,446,688,437,677,317" shape="poly">
+				</map></td>
+			</tr>
+		</table>
+	</main>
+
+    <!-- Subsolul paginii -->
+    <footer>
+        <p style="margin-bottom: 1px;">&copy; 2026 Toate drepturile rezervate. Pagina realizată de</p>
+        <p style="text-align: center; margin-bottom: 1px;">Cebanu Catalin.</p>
+    </footer>
+</body>
+</html>

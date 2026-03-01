@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebanu Catalin - Galerie de Imagini: Cele 7 Minuni ale Lumii Antice</title>
+    <style>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 4px 8px;
+        }
+
+        main {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: gainsboro;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        table {
+            width: 75%;
+            max-width: 1200px;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: ivory;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive pentru telefon */
+        @media (max-width: 768px) {
+
+            table {
+                width: 95%;
+            }
+
+            img {
+                float: none !important;
+                display: block;
+                max-width: 90%;      
+                height: auto;        
+                padding: 0 5px;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+                padding: 5px 0;
+            }
+
+            header nav a {
+                margin: 2px 0;
+                padding: 4px 10px;
+            }
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000000; 
+            padding: 10px 20px; 
+            font-size: 18px; 
+            border: 2px solid #4CAF50; 
+            cursor: pointer;
+            border-radius: 12px; 
+            text-align: center;
+            text-decoration: none; 
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s; 
+        }
+
+        .dropbtn:hover {
+            background-color: rgba(255, 255, 255, 1); 
+            transform: scale(1.05); 
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 50%; 
+            transform: translateX(-50%); 
+            border-radius: 8px; 
+            overflow: hidden;
+            top: 155%;
+        }
+
+        .dropdown-content a {
+                color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<script>
+    function toggleDropdown(event){
+        event.preventDefault();
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+<body>
+    <!-- Antetul paginii -->
+    <header>
+        <h1>Portofoliu la CSW</h1>
+        <nav>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Navigare ▼</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="Cebanu Catalin - CV.html">CV</a>
+                    <a href="Lista - Examenele de BAC.html">Examene BAC</a>
+                    <a href="Lista - Bagajelor pasagerilor rutei 7021.html">Lista Bagaje</a>
+                    <a href="Tabele HTML.html">Tabele</a>
+                    <a href="index.html">7 Minuni</a>
+                    <a href="Hărți de imagini și navigare grafică.html">Harti de imagini</a>
+                    <a href="Harta Moldovei Pe Raioane.html">Harta Moldovei pe Raioane</a>
+                    <a href="Formulare.Proba Practica.html">Formulare</a>
+                    <a href="Multimedia in HTML.html">Multimedia in HTML</a>
+                    <a href="Galerie de Imaginii - Cele 7 minuni ale Lumii Antice.html">Galerie de Imagini - Cele 7 Minuni</a>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Conținutul principal al paginii -->
+    <main>
+        <body>
+            <h1 align="center">Galerie de Imagini: Cele 7 Minuni ale Lumii Antice</h1>
+            <br><br>
+            <table border="2" align="center" valign="middle" width="750" height="400" style="margin: auto;">
+                <tr>
+                    <td>
+                        <h4 align="center">Alege Optiunea dorita:</h4> 
+                        <p align="center"><a href="Piramida lui Keops.jpg" target="cadru_intern">Piramida lui Keops</a></p>
+                        <p align="center"><a href="Gradinile suspendate ale Semiramidei.jpg" target="cadru_intern">Grădina suspendată a Semiramidei</a></p>
+                        <p align="center"><a href="Templul Dianie din Efes.jpg" target="cadru_intern">Templul Dianiei din Efes</a></p>
+                        <p align="center"><a href="Monumentul lui Mausol din Halicarnas.jpg" target="cadru_intern">Monumentul lui Mausol din Halicarnas</a></p>
+                        <p align="center"><a href="Statuia lui Zeus din Olimpia.jpg" target="cadru_intern">Statuia lui Zeus din Olimpia</a></p>
+                        <p align="center"><a href="Farul Din Alexandria.jpg" target="cadru_intern">Farul din Alexandria</a></p>
+                        <p align="center"><a href="Colosul Din Rhodos.jpg" target="cadru_intern">Colosul din Rodos</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <iframe
+                            src="Piramida lui Keops.jpg" name="cadru_intern" width="310" height="210" style="margin: auto;">
+                        </iframe>
+                    </td>
+                </tr>
+            </table>
+        </body>
+    </main>
+
+    <!-- Subsolul paginii -->
+    <footer>
+        <p style="margin-bottom: 1px;">&copy; 2026 Toate drepturile rezervate. Pagina realizată de</p>
+        <p style="text-align: center; margin-bottom: 1px;">Cebanu Catalin.</p>
+    </footer>
+</body>
+</html>
